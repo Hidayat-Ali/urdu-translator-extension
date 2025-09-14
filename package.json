@@ -1,25 +1,32 @@
 {
   "name": "urdu-translator-extension",
   "version": "1.0.0",
-  "description": "this extension is used to convert the english words into Urdu words to make it easy for understanding while reading the web pages",
+  "description": "Chrome extension for English to Urdu translation on hover",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
-  },
+  "keywords": [
+    "chrome-extension",
+    "translation",
+    "english",
+    "urdu"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-react": "^7.27.1",
-    "babel-loader": "^10.0.0",
-    "css-loader": "^7.1.2",
-    "style-loader": "^4.0.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^6.11.0",
+    "style-loader": "^3.3.4",
     "webpack": "^5.101.3",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
